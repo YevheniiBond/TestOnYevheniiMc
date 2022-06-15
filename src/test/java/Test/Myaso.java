@@ -12,4 +12,15 @@ public class Myaso extends TestInit {
         megaSupermarketPage.listOfMeat().get(3).click();
         Assert.assertTrue(driver.getCurrentUrl().contains("meat"));
     }
+
+    @Test
+
+    public void CheckSectionFish() {
+        MegaSupermarketPage megaSupermarketPage = new MegaSupermarketPage(driver);
+        driver.get("https://megamarket.zakaz.ua/uk/categories/meat-fish-poultry-megamarket/");
+        megaSupermarketPage.clickSectionFish().get(7).click();
+        megaSupermarketPage.itemFish().get(0).click();
+
+        Assert.assertTrue(driver.getCurrentUrl().contains("oseledets-norven"));
+    }
 }

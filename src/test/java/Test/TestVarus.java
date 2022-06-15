@@ -15,7 +15,6 @@ public class TestVarus extends TestInit{
         NovusHomePage novusHomePage = new NovusHomePage(driver);
         Actions action = new Actions(driver);
         goToZakaz();
-        maxWindow();
         varusHomePage.goToVarus().click();
         action.moveToElement(varusHomePage.alcohol()).perform();
         varusHomePage.jimBeam().click();

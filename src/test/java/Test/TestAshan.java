@@ -38,7 +38,7 @@ public class TestAshan extends TestInit {
         @Test
     public void trainingTest(){
         driver.get("https://pchelka.zakaz.ua/uk/categories/meat-fish-poultry-pchelka/");
-            maxWindow();
+
             HomePageBeeSupermarket homePageBeeSupermarket = new HomePageBeeSupermarket(driver);
             homePageBeeSupermarket.productItem().get(0).click();
             homePageBeeSupermarket.productChickenMeatItem().get(28).click();

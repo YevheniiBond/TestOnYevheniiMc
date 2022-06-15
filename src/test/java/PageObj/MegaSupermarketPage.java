@@ -41,4 +41,13 @@ public class MegaSupermarketPage extends BasePage {
     public List<WebElement> listOfMeat() {
         return getElementsByXpath("//span[@class='jsx-4277898529 CategoryCard__inner']");
     }
+
+    public List<WebElement> clickSectionFish() {
+        return getElementsByXpath("//span[@class='jsx-4277898529']");
+    }
+
+
+    public List<WebElement> itemFish() {
+        return getElementsByXpath("//div[@class='jsx-1433147593 ProductsBox__listItem']");
+    }
 }
