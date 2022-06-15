@@ -10,6 +10,5 @@ public class Myaso extends TestInit {
         driver.get("https://megamarket.zakaz.ua/uk/categories/meat-fish-poultry-megamarket/");
         megaSupermarketPage.listOfMeat().get(3).click();
 
-        afterTest();
     }
 }
