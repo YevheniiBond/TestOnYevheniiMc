@@ -15,7 +15,7 @@ public class TestZakaz extends TestInit {
        HeaderView headerView = new HeaderView(driver);
        NovusHomePage novusHomePage = new NovusHomePage(driver);
         goToZakaz();                                         //головна сторінка заказу
-        maxWindow();                                    //максимальне збільшення вікна браузера
+
         headerView.clickOnUALanguage().click();              //зміна сайту на Українську мову
         headerView.onNovusBtn().click();                     //головна сторінка Новуса
         novusHomePage.choseAddressBtn().click();             //зміна адреси доставки

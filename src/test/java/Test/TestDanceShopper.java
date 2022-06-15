@@ -22,7 +22,6 @@ public class TestDanceShopper extends TestInit {
         WomanDressItemsPage womanDressItemsPage = new WomanDressItemsPage(driver);
         Actions action = new Actions(driver);
 
-        maxWindow();
         driver.get("https://www.danceshopper.com/");
         homePageDanceShopper.goToWomanClothes().click();                   // Розділ для жінок
         homePageDanceShopper.ballroomSkirts().click();                     // Сукні для європейських танців
@@ -67,7 +66,7 @@ public class TestDanceShopper extends TestInit {
     WomanDressItemsPage womanDressItemsPage = new WomanDressItemsPage(driver);
     Actions action = new Actions(driver);
 
-    maxWindow();
+
     driver.get("https://www.danceshopper.com/");                          // Головна сторінка сайту
     homePageDanceShopper.goToManClothes().click();                        // Розділ для чоловіків
     homePageDanceShopper.mansBallroomShoes().click();                     // Розділ чоловічого взуття для танців

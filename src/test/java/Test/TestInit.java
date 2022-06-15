@@ -14,10 +14,10 @@ public class TestInit {
     @BeforeMethod
     public void setUp() {
         WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();}
-    public void maxWindow() {
+        driver = new ChromeDriver();
         driver.manage().window().maximize();
     }
+
 
     public void goToZakaz() {
         driver.get("https://zakaz.ua/uk/");
@@ -28,9 +28,10 @@ public class TestInit {
         driver.get("https://auchan.zakaz.ua/uk/");
     }
 
-    public void goToBeeMarket(){
+    public void goToBeeMarket() {
         driver.get("https://pchelka.zakaz.ua/uk/");
     }
+
     @AfterMethod
 
     public void afterTest() {
