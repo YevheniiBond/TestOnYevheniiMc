@@ -1,5 +1,6 @@
 package Test;
 
+import PageObj.HomePageBeeSupermarket;
 import PageObj.MegaSupermarketPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -22,5 +23,17 @@ public class Myaso extends TestInit {
         megaSupermarketPage.itemFish().get(0).click();
 
         Assert.assertTrue(driver.getCurrentUrl().contains("oseledets-norven"));
+    }
+
+    @Test
+
+    public void trainingTest(){
+        driver.get("https://pchelka.zakaz.ua/uk/categories/meat-fish-poultry-pchelka/");
+        HomePageBeeSupermarket homePageBeeSupermarket = new HomePageBeeSupermarket(driver);
+        homePageBeeSupermarket.productItem().get(0).click();
+        homePageBeeSupermarket.productChickenMeatItem().get(28).click();
+
+        Assert.assertTrue(homePageBeeSupermarket.meatPrice().isDisplayed());
+        Assert.assertTrue(homePageBeeSupermarket.addToCartBtn().isDisplayed());
     }
 }
